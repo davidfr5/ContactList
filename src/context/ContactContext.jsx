@@ -8,7 +8,7 @@ export const ContactProvider = ({ children }) => {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // ✅ Crear la agenda si no existe
+  // Crear la agenda si no existe
   const createAgenda = async () => {
     try {
       await fetch(`${API_BASE}/agendas/${AGENDA_SLUG}`, {
